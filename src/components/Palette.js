@@ -10,6 +10,7 @@ import { COLORS } from '../utils';
  * to other components. 
  */
 const Palette = (props) => {
+  console.log(props)
   /**
    * Create constants for activeColor and setActiveColor, reading the value off of the props
    */
