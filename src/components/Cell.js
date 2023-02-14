@@ -11,7 +11,9 @@ import React from 'react';
  */
 const Cell = (props) => {
   /* Create constants for color, isActive, and handleClick, reading the value off of props */
-
+  const color = props.color
+  const isActive = props.isActive
+  const handleClick = props.handleClick
   /**
    * For the template you need to
    * - set the className to be "cell active" if the value of isActive
@@ -21,7 +23,7 @@ const Cell = (props) => {
    * - set the onClick property to be equal to the handleClick function
    *    passed in with the props
    */
-  return <div className="cell"></div>
+  return <div className= {isActive ? "cell active": "cell"}></div>
 }
 
 export default Cell;
