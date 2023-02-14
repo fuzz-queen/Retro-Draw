@@ -29,13 +29,13 @@ const Grid = (props) => {
    *        - calls setCellList, passing in the updated copy
    */
   return <div className="grid">
-    {cellList.map((color, index) => {
+    {cellList.map((cell, index) => {
       return (
         <Cell key = {`grid- ${index}`} 
         color = {cell.color}
         handleClick ={() => {
-          cellListCopy = [...cellList]
-          setActiveColor(color)
+          const cellListCopy = [...cellList]
+          cellListCopy[index].color = activeColor
           setCellList(cellListCopy)
         }}
         />

@@ -11,13 +11,18 @@ const ActionPanel = (props) => {
   /**
    * Create constants for activeColor, cellList, and setCellList, reading them from the props
    */
+  const activeColor = props.activeColor
+  const cellList = props.cellList
+  const setCellList = props.setCellList
 
   return <div className="action-panel">
     {/* 
       This button needs an onClick function which:
         - creates a new cell list using buildCellList
         - passes the new cell list to setCellList
-    */}
+    */
+    onclick = 
+    }
     <button>clear all</button>
     {/* 
       This button needs an onClick function which:
