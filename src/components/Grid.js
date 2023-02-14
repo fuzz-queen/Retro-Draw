@@ -30,6 +30,7 @@ const Grid = (props) => {
    */
   return <div className="grid">
     {cellList.map((cell, index) => {
+      console.log(cell)
       return (
         <Cell key = {`grid- ${index}`} 
         color = {cell.color}
