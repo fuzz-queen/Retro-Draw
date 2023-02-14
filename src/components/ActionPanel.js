@@ -21,7 +21,6 @@ const ActionPanel = (props) => {
         - creates a new cell list using buildCellList
         - passes the new cell list to setCellList
     */
-    onclick = 
     }
     <button>clear all</button>
     {/* 
